@@ -5,6 +5,7 @@ var http = require("http");
 http.get("http://blockchain.info/ticker",function(res){
     var statusCode = res.statusCode;
     if(statusCode = 200){
+        //buffer一节已经提到过，试着修改下面的代码
         var result = "";
         res.on("data",function(data){
             result+=data;

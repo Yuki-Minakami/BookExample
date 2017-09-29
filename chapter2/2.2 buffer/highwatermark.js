@@ -17,7 +17,7 @@ rs.on('data', function(chunk){
 });
 rs.on('end', function(){
     var buf = Buffer.concat(data);
-    console.log(buf.toString('utf-8'))
+    console.log(buf.toString('utf-8'));
 });
 
 
