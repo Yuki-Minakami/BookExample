@@ -1,1 +1,1 @@
-For chapter ,please go to KoaBlog
+For chapter ,please go to KoaBlog(https://github.com/Yuki-Minakami/KoaBlog)

@@ -4,11 +4,11 @@
 
 var ctx =1;
 var func1 = function (ctx,next){
-    next();
-}
+    return next();//试着把return去掉
+};
 var func2 = function (ctx,next){
-    next();
-}
+   return next();//试着把return去掉
+};
 var p = Promise.resolve(
    func1(ctx,function next(){
 
@@ -18,8 +18,8 @@ var p = Promise.resolve(
            })
        )
    })
-)
+);
 p.then(function(ctx){
     console.log(ctx);
-})
+});
 

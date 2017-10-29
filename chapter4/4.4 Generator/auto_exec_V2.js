@@ -13,6 +13,5 @@ function auto(Generator){
             next(data)
         })
     }
-
     next();
 }

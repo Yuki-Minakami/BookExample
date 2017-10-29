@@ -26,7 +26,7 @@ var fs = require("fs");
 //})
 
 var promise = new Promise(function(resolve, reject) {
-   resolve("Hello World");
+    resolve("Hello World");
     throw new Error("get error");//promise状态确定后再抛出错误，无效
 });
 

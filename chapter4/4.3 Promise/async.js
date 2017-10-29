@@ -4,9 +4,9 @@
 var readFile_promise = require("./readFile_promise");
 
 async function readFile(){
-    var result1 = await readFile_promise("1.txt");
+    var result1 = await readFile_promise("foo.txt");
     console.log(result1);// I am foo.txt
-    var result2 = await readFile_promise("2.txt");
+    var result2 = await readFile_promise("bar.txt");
     console.log(result1);// I am foo.txt
 }
 readFile();
