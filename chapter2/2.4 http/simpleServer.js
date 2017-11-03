@@ -12,9 +12,6 @@ server.on("connection",function(req,res){
 server.on("request",function(req,res){
     console.log("request");
 });
-server.on("request",function(req,res){
-    console.log("request2");
-});
 server.listen(3000);
 
 

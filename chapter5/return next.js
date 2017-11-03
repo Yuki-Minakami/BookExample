@@ -20,6 +20,6 @@ var p = Promise.resolve(
    })
 );
 p.then(function(ctx){
-    console.log(ctx);
+    console.log(ctx);//ctx的期望值为2
 });
 

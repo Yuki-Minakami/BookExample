@@ -9,13 +9,10 @@ var date ={
         var self = this;
         var func1 = function(){
             return self.year+"/"+self.month+"/"+self.day;
-        }
+        };
        // var func1 = ()=>this.year+"/"+this.month+"/"+this.day;
         return func1();
     }
 }
 
 console.log(date.getTime());
-
-var aa = 10 ;
-console.log(global.aa);
