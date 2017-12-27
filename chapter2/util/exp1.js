@@ -3,7 +3,9 @@
  */
 var util = require('util');
 var EventEmitter = require('events');
-function MyEventEmitter() {//声明一个构造函数
+
+//声明一个构造函数
+function MyEventEmitter() {
     EventEmitter.call(this);//调用父类构造函数
 }
 util.inherits(MyEventEmitter, EventEmitter);//继承EventEmitter类

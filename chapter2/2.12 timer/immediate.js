@@ -3,7 +3,7 @@
  */
 
 setImmediate(function(arg) {
-    console.log(`executing immediate: ${arg}`);
+    console.log('executing immediate:', arg);
 }, 'so immediate');
 
 setTimeout(function(){

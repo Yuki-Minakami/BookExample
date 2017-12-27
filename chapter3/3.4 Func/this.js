@@ -3,7 +3,7 @@
  */
 var date ={
     year:2017,
-    month:1,
+    month:5,
     day:15,
     getTime:function(){
         var self = this;
@@ -16,3 +16,14 @@ var date ={
 }
 
 console.log(date.getTime());
+
+
+
+function foo() {
+    setTimeout(()=> {
+        console.log(this.id);
+
+    }, 100);
+}
+global.id = 21;
+foo();

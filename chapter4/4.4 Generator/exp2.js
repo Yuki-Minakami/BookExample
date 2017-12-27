@@ -9,6 +9,6 @@ function* foo(x) {
 }
 
 var a = foo(5);
-console.log(a.next()) // Object{value:6, done:false}
-console.log(a.next(8)) // Object{value:NaN, done:false}
-console.log(a.next())
+console.log(a.next()); // Object{value:6, done:false}
+console.log(a.next(8)); // Object{value:NaN, done:false}
+console.log(a.next());

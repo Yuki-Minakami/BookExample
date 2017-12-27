@@ -20,12 +20,3 @@ for(var key in obj){
 
 console.log(Object.keys(obj));//[ 'name', 'age' ]
 console.log(Object.getOwnPropertyNames(obj));//[ 'name', 'age', 'sex' ]
-
-
-$.ajax("test.html")
-    .done(function(data){
-        alert("success");
-    })
-    .fail(function(){
-        alert("fail");
-    });

@@ -30,7 +30,9 @@ var Iter ={
             }
         };
     }
-}
+};
+console.log(Iter[Symbol.iterator]);//[Function: [Symbol.iterator]]
+
 
 
 

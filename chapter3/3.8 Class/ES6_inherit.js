@@ -11,10 +11,6 @@ class Student extends Person{
     getInfo(){
         return super.getInfo()+","+this.sex
     }
-    print (){
-        var info = this.getInfo()
-        console.log(info);
-    }
 }
 var student = new Student("Lear","30","male");
 
@@ -24,6 +20,8 @@ console.log(Student.prototype);// Student {}
 
 console.log(student.__proto__=== Student.prototype);
 
-//在ES6中运行
 console.log(Student.__proto__ === Person.prototype.constructor);//true
+
+console.log(Student.__proto__ ==Person);//true
+
 

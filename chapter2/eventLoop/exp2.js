@@ -1,4 +1,8 @@
-var fs = require('fs');
+/**
+ * Created by likai on 2017/9/27.
+ */
+
+/*-------下面是官方文档的例子----------*/
 
 var timeoutScheduled = Date.now();
 
@@ -7,12 +11,10 @@ setTimeout(function () {
     console.log(delay + "ms have passed since I was scheduled");
 }, 100);
 
-// Assume this takes 95ms to complete
-fs.readFile('/path/to/file', function(err,data){
+fs.readFile('foo.txt', function(err,data){
     var startCallback = Date.now();
     // do something that will take 10ms...
-    while (Date.now() - startCallback < 10) {
+    while (Date.now() - startCallback < 1000) {
         ; // do nothing
     }
-
 });

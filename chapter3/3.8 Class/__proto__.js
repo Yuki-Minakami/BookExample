@@ -10,9 +10,6 @@ class Student{
             console.log("name:",this.name,"sex:",this.sex);
         }
     }
-    //getInfo(){
-    //    console.log("name:",this.name,"sex:",this.sex);
-    //}
 }
 
 
@@ -20,6 +17,6 @@ const stu = new Student();
 stu.__proto__.sayHello = ()=>{
     console.log("Hello");
 }
-stu.sayHello()
+stu.sayHello();
 
 

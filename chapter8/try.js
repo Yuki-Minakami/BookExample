@@ -3,14 +3,14 @@
  */
 var fs = require("fs");
 
+//try/catch无法捕获错误，会出现Error: ENOENT: no such file or directory, open 'some file not exists.txt'
+//应该使用监听error事件的方式来处理
+try{
+    var readStream = fs.createReadStream("some file not exists.txt");
+}catch(err){
+    console.log(err);
+}
 
-var readStream = fs.createReadStream("foo.txt");
-readStream.on('open',function(fd){
-    console.log('开始读取文件');
+readStream.on("error",function(err){
+    console.log(err);
 });
-readStream.on('data',function(data){
-    console.log('读取到数据：');
-    console.log(data);
-});
-    console.log("done");
-

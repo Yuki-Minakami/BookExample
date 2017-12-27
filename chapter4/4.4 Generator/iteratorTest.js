@@ -8,11 +8,8 @@ var Iter ={
             }
         };
     }
-}
+};
 
 var obj = new Iter[Symbol.iterator]();
 obj.next();//1
 obj.next();//2
-/**
- * Created by likai on 2017/6/28.
- */

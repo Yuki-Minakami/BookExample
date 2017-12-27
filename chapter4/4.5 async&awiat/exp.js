@@ -88,7 +88,7 @@ async function readFile(list){
     })
 }
 
-
+/*-------------------------------------------------*/
 async function readFile3(list){
     for(var item of list){
         var result = await myReadFile(item);

@@ -3,7 +3,7 @@ function myIter(array){
 }
 
 myIter.prototype[Symbol.iterator] = function() {
-    //var self = this;
+    //var self = this;//下面使用箭头函数，可以省去this的指向问题
     let index = 0;
     var next = ()=> {
         if (index < this.array.length) {

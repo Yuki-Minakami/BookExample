@@ -4,7 +4,7 @@
 var readline = require("readline");
 var  fs = require("fs");
 var rl = readline.createInterface({
-    input:fs.createReadStream("./1.txt")
+    input:fs.createReadStream("./foo.txt")
 });
 
 rl.on("line", function(data){
