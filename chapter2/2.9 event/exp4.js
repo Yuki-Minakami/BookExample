@@ -11,3 +11,7 @@ myEmitter.on("event",function(){
 })
 myEmitter.emit("event");
 console.log(myEmitter.eventNames());
+//打印结果
+// event
+// event
+// [ 'event' ]

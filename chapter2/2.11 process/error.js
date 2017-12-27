@@ -4,10 +4,7 @@
 var eventEmitter = require("events");
 var myEmitter = new eventEmitter();
 
-//var result = 3/0;
-//myEmitter.on("ReferenceError",function(){
-//    console.log("event");
-//})
+
 process.on("uncaughtException",function(){
     console.log("got error");
 })
@@ -15,5 +12,8 @@ process.on("uncaughtException",function(){
 
 console.log(3/i);
 
-
+//var result = 3/0;
+//myEmitter.on("ReferenceError",function(){
+//    console.log("event");
+//})
 //myEmitter.emit("error",new Error("crash!"))
