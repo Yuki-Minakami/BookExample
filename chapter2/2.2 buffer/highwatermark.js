@@ -6,7 +6,7 @@ var rs = require("fs").createReadStream('test.txt', {highWaterMark: 10});
 // var data = '';
 // rs.on("data", function (chunk){
 //     data += chunk;
-// });s
+// });
 // rs.on("end", function () {
 //     console.log(data);
 // });
